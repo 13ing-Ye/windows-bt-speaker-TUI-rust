@@ -1,0 +1,38 @@
+[package]
+name = "bluetooth-audio-receiver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+windows = { version = "0.62", features = [
+    "Media_Audio",
+    "Devices_Enumeration",
+    "Foundation",
+    "Foundation_Collections",
+    "Devices_Bluetooth",
+    "Win32_System_Com",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_Console",
+    # CONIN$ handle for the --smoke mouse-capture probe (CreateFileW lives in
+    # FileSystem and its signature references SECURITY_ATTRIBUTES).
+    "Win32_Storage_FileSystem",
+    "Win32_Security",
+    # ImmAssociateContext: detach the IME from the console window while the TUI
+    # runs, so letters reach crossterm instead of the candidate window.
+    "Win32_UI_Input_Ime",
+    "Win32_Foundation",
+    "Win32_System_SystemInformation",
+    "Win32_System_Variant",
+    # WASAPI peak meter (P6): IMMDeviceEnumerator + IAudioMeterInformation.
+    "Win32_Media_Audio",
+    "Win32_Media_Audio_Endpoints",
+] }
+
+# TUI stack. Deliberately no async runtime (constraint C1).
+ratatui = "0.29"
+crossterm = "0.28"
+unicode-width = "0.2"
+
+[profile.release]
+opt-level = 2

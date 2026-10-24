@@ -1,0 +1,7 @@
+# This project is built with the GNU (MinGW-w64) toolchain so that it can be
+# compiled without Visual Studio Build Tools installed.
+#
+# If you have MSVC + Windows SDK, you may delete this file and use the default
+# `stable-x86_64-pc-windows-msvc` toolchain instead.
+[toolchain]
+channel = "stable-x86_64-pc-windows-gnu"

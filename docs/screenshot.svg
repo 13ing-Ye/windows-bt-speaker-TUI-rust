@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" width="920" height="620" role="img" aria-label="Bluetooth Audio Receiver TUI 界面示意图">
+  <title>Bluetooth Audio Receiver — TUI 界面</title>
+
+  <!-- 窗口背景 -->
+  <rect x="16" y="16" width="888" height="588" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-width="1.5"/>
+
+  <g font-family="Consolas, 'Cascadia Mono', 'Microsoft YaHei', monospace" font-size="14">
+
+    <!-- 标题 -->
+    <text x="40" y="52" fill="#22d3ee" font-weight="bold">Bluetooth Audio Receiver</text>
+    <line x1="40" y1="64" x2="880" y2="64" stroke="#22d3ee" stroke-width="1" opacity="0.55"/>
+
+    <!-- 设备区 -->
+    <text x="40" y="94" fill="#fbbf24" font-weight="bold">Devices (2)</text>
+    <text x="880" y="94" fill="#64748b" text-anchor="end">Status</text>
+
+    <!-- 选中行背景 -->
+    <rect x="36" y="110" width="848" height="26" fill="#22d3ee" opacity="0.92"/>
+    <text x="40" y="128" fill="#0b1220" font-weight="bold">▸ 张三的iPad</text>
+    <text x="880" y="128" fill="#0b1220" text-anchor="end">Idle</text>
+
+    <text x="40" y="158" fill="#4ade80">  李四的手机</text>
+    <text x="880" y="158" fill="#4ade80" text-anchor="end">已连接 ●</text>
+
+    <line x1="40" y1="180" x2="880" y2="180" stroke="#334155" stroke-width="1"/>
+
+    <!-- 详情区 -->
+    <text x="40" y="210" fill="#fbbf24" font-weight="bold">Detail</text>
+
+    <text x="40" y="240" fill="#60a5fa">Name</text>
+    <text x="96" y="240" fill="#60a5fa">:</text>
+    <text x="112" y="240" fill="#e879f9">李四的手机</text>
+
+    <text x="40" y="266" fill="#60a5fa">Addr</text>
+    <text x="96" y="266" fill="#60a5fa">:</text>
+    <text x="112" y="266" fill="#67e8f9">AA:BB:CC:DD:EE:02</text>
+
+    <text x="40" y="292" fill="#60a5fa">State</text>
+    <text x="96" y="292" fill="#60a5fa">:</text>
+    <text x="112" y="292" fill="#4ade80">Connected</text>
+
+    <line x1="40" y1="314" x2="880" y2="314" stroke="#334155" stroke-width="1"/>
+
+    <!-- 日志区 -->
+    <text x="40" y="344" fill="#fbbf24" font-weight="bold">Log</text>
+
+    <text x="40" y="374" fill="#64748b">[07:03:45]</text>
+    <text x="128" y="374" fill="#94a3b8">蓝牙服务已就绪，等待设备扫描指令</text>
+
+    <text x="40" y="398" fill="#64748b">[07:03:45]</text>
+    <text x="128" y="398" fill="#94a3b8">正在扫描蓝牙设备…</text>
+
+    <text x="40" y="422" fill="#64748b">[07:03:46]</text>
+    <text x="128" y="422" fill="#94a3b8">扫描完成，共 2 个设备</text>
+
+    <text x="40" y="446" fill="#64748b">[07:04:12]</text>
+    <text x="128" y="446" fill="#fbbf24">正在连接 李四的手机…</text>
+
+    <text x="40" y="470" fill="#64748b">[07:04:13]</text>
+    <text x="128" y="470" fill="#4ade80">已连接 李四的手机（音频已开始传输）</text>
+
+    <line x1="40" y1="492" x2="880" y2="492" stroke="#334155" stroke-width="1"/>
+
+    <!-- 音量条 -->
+    <text x="40" y="522" fill="#e2e8f0">音量</text>
+    <text x="88" y="522" fill="#4ade80">▅▅▅</text>
+    <text x="133" y="522" fill="#fbbf24">▅▅</text>
+    <text x="161" y="522" fill="#64748b">▁▁▁</text>
+    <text x="880" y="522" fill="#4ade80" text-anchor="end">自动重连 关</text>
+
+    <!-- 按钮栏 -->
+    <text x="40" y="556" fill="#22d3ee" font-weight="bold">[ 连接 Enter ]  [ 重连 f ]  [ 断开 d ]  [ 刷新 r ]  [ 蓝牙设置 b ]  [ 退出 q ]</text>
+
+    <!-- 提示行 -->
+    <text x="40" y="584" fill="#64748b">↑↓/jk 选择 · Enter 连接 · 鼠标：点击按钮或设备行，双击连接 · Shift+拖选复制</text>
+
+  </g>
+</svg>
